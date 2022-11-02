@@ -1,0 +1,154 @@
+{
+	"editor.inlineSuggest.enabled": true,
+	"editor.tokenColorCustomizations": {
+		"comments": "#c3c3c385",
+		"strings": "#5f899b",
+		"functions": "#d5ae6e",
+		"keywords": "#9f6262",
+		"numbers": "#FFF",
+		"variables": "#70b5ff",
+		"types": "#01b196",
+		"textMateRules": [
+			{
+				"scope": ["entity.name.tag"],
+				"settings": {
+					"foreground": "#b0b08f",
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": "entity.other.attribute-name",
+				"settings": {
+					"foreground": "#9e83bc",
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": "comment",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			}
+		]
+	},
+	"workbench.colorCustomizations": {
+		
+		"activityBar.background": "#090b0c",
+		"titleBar.inactiveBackground": "#090b0c",
+		"titleBar.activeBackground": "#090b0c",
+		"activityBarBadge.background": "#009161",
+		"editor.background": "#090b0c",
+		"sideBar.background": "#090b0c",
+		"tab.inactiveBackground": "#090b0c",
+		"editorGroupHeader.tabsBackground": "#090b0c",
+		"editor.lineHighlightBorder": "#161e27",
+		"editorLineNumber.foreground": "#41464d",
+		
+		
+		"sideBarSectionHeader.background": "#13171a",
+		"sideBarSectionHeader.border": "#000",
+		"sideBar.border": "#000000",
+		"badge.foreground": "#EEE",
+		"tab.activeBackground": "#1d2429",
+		"statusBar.background": "#13171a",
+		"notificationCenterHeader.background": "#13171a",
+		// input
+		"input.background": "#13171a",
+		"input.foreground": "#EEE",
+		"input.placeholderForeground": "#9f9fa3",
+		// list
+		"list.activeSelectionBackground": "#252c33",
+		"list.activeSelectionForeground": "#dedfe1",
+		"list.inactiveSelectionBackground": "#252c33",
+		"list.inactiveSelectionForeground": "#dedfe1",
+		"list.focusBackground": "#252c33",
+		"list.focusForeground": "#dedfe1",
+		"list.hoverBackground": "#13171a",
+		"list.focusOutline": "#13171a"
+	},
+	"editor.lineHeight": 29,
+	"editor.fontSize": 16,
+	"workbench.iconTheme": "material-icon-theme",
+	"prettier.semi": false,
+	"prettier.tabWidth": 4,
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"editor.wordWrap": "on",
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": true,
+		"plaintext": true,
+		"markdown": true,
+		"javascript": true,
+		"javascriptreact": true,
+		"typescriptreact": true,
+		"html": true,
+		"postcss": false,
+		"css": false
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"settingsSync.ignoredSettings": [],
+	"codesnap.backgroundColor": "#090b0c",
+	"codesnap.showLineNumbers": false,
+	"codesnap.transparentBackground": true,
+	"codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 0px 0px",
+	"codesnap.containerPadding": "2em",
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.language.brackets": [],
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+	"python.defaultInterpreterPath": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python",
+	"svelte.enable-ts-plugin": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"prettier.jsxSingleQuote": true,
+	"prettier.singleQuote": true,
+	"[postcss]": {
+		"breadcrumbs.showEnums": true
+	},
+	"emmet.includeLanguages": {
+		"postcss": "pcss",
+		"svelte": "html"
+	},
+	"editor.fontLigatures": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"liveServer.settings.donotShowInfoMsg": true,
+	"git.autofetch": true,
+	"prettier.singleAttributePerLine": true,
+	"prettier.bracketSameLine": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"editor.unicodeHighlight.allowedLocales": {
+		"es": true
+	},
+	"debug.console.fontSize": 10,
+	"tailwindCSS.rootFontSize": 14,
+	"terminal.integrated.localEchoStyle": "dim",
+	"editor.unicodeHighlight.allowedCharacters": {
+		" ": true
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"window.zoomLevel": 1,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false
+}
