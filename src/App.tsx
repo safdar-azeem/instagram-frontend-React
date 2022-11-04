@@ -1,7 +1,13 @@
-import { Title } from '@mantine/core'
+import { Loader } from '@mantine/core'
+import { RouterProvider } from 'react-router-dom'
+import { routes } from './routes'
 
 const App = () => {
-  return <Title order={1}>Hello world</Title>
+	return (
+		<>
+			<RouterProvider router={routes} fallbackElement={<Loader />} />
+		</>
+	)
 }
 
 export default App
