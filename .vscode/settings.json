@@ -32,19 +32,19 @@
 		]
 	},
 	"workbench.colorCustomizations": {
+	
 		
-		"activityBar.background": "#090b0c",
-		"titleBar.inactiveBackground": "#090b0c",
-		"titleBar.activeBackground": "#090b0c",
+
 		"activityBarBadge.background": "#009161",
 		"editor.background": "#090b0c",
 		"sideBar.background": "#090b0c",
 		"tab.inactiveBackground": "#090b0c",
 		"editorGroupHeader.tabsBackground": "#090b0c",
+		"activityBar.background": "#090b0c",
 		"editor.lineHighlightBorder": "#161e27",
 		"editorLineNumber.foreground": "#41464d",
-		
-		
+		"titleBar.activeBackground": "#13171a",
+		"titleBar.inactiveBackground": "#13171a",
 		"sideBarSectionHeader.background": "#13171a",
 		"sideBarSectionHeader.border": "#000",
 		"sideBar.border": "#000000",
@@ -70,7 +70,6 @@
 	"editor.fontSize": 16,
 	"workbench.iconTheme": "material-icon-theme",
 	"prettier.semi": false,
-	"prettier.tabWidth": 4,
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -133,8 +132,6 @@
 	},
 	"liveServer.settings.donotShowInfoMsg": true,
 	"git.autofetch": true,
-	"prettier.singleAttributePerLine": true,
-	"prettier.bracketSameLine": true,
 	"liveServer.settings.donotVerifyTags": true,
 	"editor.unicodeHighlight.allowedLocales": {
 		"es": true
@@ -150,5 +147,8 @@
 	},
 	"window.zoomLevel": 1,
 	"explorer.confirmDragAndDrop": false,
-	"explorer.confirmDelete": false
+	"explorer.confirmDelete": false,
+	"prettier.bracketSameLine": true,
+	"prettier.printWidth": 90,
+	"prettier.singleAttributePerLine": true
 }
