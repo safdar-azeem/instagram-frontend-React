@@ -19,26 +19,27 @@ const theme: MantineThemeOverride = {
 		},
 		InputWrapper: {
 			classNames: {
-				label: 'mb-2 text-[15px]',
+				label: 'mb-1 text-[15px]',
 				error: 'mt-2 text-[15px]',
-			},
-		},
-		TextInput: {
-			defaultProps: {
-				size: 'xl',
-			},
-		},
-		InputWrapperLabel: {
-			styles: {
-				root: {
-					marginBottom: 10,
-				},
+				required: 'text-black',
 			},
 		},
 		Avatar: {
 			defaultProps: {
 				size: 'lg',
 				radius: 'xl',
+			},
+		},
+		Container: {
+			defaultProps: {
+				px: 24,
+				sizes: {
+					xs: 540,
+					sm: 720,
+					md: 960,
+					lg: 1240,
+					xl: 1380,
+				},
 			},
 		},
 	},
