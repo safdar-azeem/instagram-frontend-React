@@ -31,9 +31,9 @@ const FormRegistration = ({
 	}
 
 	return (
-		<Container size='xl'>
-			<Box className='flex w-full justify-between gap-x-7 items-center min-h-[80vh] md:min-h-screen mt-10 md:mt-0'>
-				<form onSubmit={onSubmit} className='w-full md:w-1/2 lg:w-1/3'>
+		<Container size='lg'>
+			<Box className='flex w-full justify-between gap-x-7 items-center min-h-screen md:min-h-screen py-10'>
+				<form onSubmit={onSubmit} className='w-full md:w-1/2 lg:w-2/5'>
 					<header className='mb-8 text-center md:text-left'>
 						<h1>{heading}</h1>
 						<Text>{description}</Text>
