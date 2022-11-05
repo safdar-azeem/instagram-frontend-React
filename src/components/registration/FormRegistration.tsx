@@ -70,7 +70,7 @@ const FormRegistration = ({
 					</footer>
 				</form>
 				<Box className='w-2/4 hidden md:flex'>
-					<img src='/public/images/login-bg.svg' alt='Login' className='w-full' />
+					<img src='/images/login-bg.svg' alt='Login' className='w-full' />
 				</Box>
 			</Box>
 		</Container>
