@@ -11,6 +11,7 @@ interface IFormRegistrationProps {
 	footerText: string
 	footerLinkText: string
 	footerLink: string
+	isLoading?: boolean
 }
 
 const FormRegistration = ({
@@ -22,6 +23,7 @@ const FormRegistration = ({
 	footerText,
 	footerLinkText,
 	footerLink,
+	isLoading,
 }: IFormRegistrationProps) => {
 	const { formValues, formErrors, handleChange, doValidate } = useForm(formSchema)
 
@@ -57,7 +59,13 @@ const FormRegistration = ({
 							/>
 						</Input.Wrapper>
 					))}
-					<Button type='submit' variant='filled' fullWidth className='mt-6'>
+					<Button
+						type='submit'
+						variant='filled'
+						fullWidth
+						className='mt-6'
+						loading={isLoading}
+					>
 						{submitText}
 					</Button>
 					<footer className='mt-6'>
