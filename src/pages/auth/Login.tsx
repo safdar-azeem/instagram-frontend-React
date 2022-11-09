@@ -1,20 +1,20 @@
-import { ApolloError, useMutation } from '@apollo/client'
+import { ApolloError } from '@apollo/client'
 import { Icon } from '@iconify-icon/react'
 import { showNotification } from '@mantine/notifications'
 import { IFormValues } from 'formash'
 import { useNavigate } from 'react-router-dom'
 import FormRegistration from '../../components/registration/FormRegistration'
 import { AppRoutes } from '../../constants/routes.constants'
-import LoginMutation from '../../graphql/mutations/login.mutation'
 import { loginSchema } from '../../mocks/login.schema'
+import { useLoginMutation } from '../../types/graphql.types'
 import iCookies from '../../utils/cookies.utils'
 
 const Login = () => {
 	const navigate = useNavigate()
 
-	const [login, { loading }] = useMutation(LoginMutation, {
+	const [login, { loading }] = useLoginMutation({
 		onCompleted: ({ login }) => {
-			iCookies.setToken(login.token)
+			iCookies.setToken(login?.token || '')
 			showNotification({
 				message: 'Login successful',
 				icon: <Icon icon='mdi:check' />,
@@ -30,7 +30,13 @@ const Login = () => {
 		},
 	})
 
-	const handleSubmit = (data: IFormValues) => login({ variables: data })
+	const handleSubmit = (data: IFormValues) =>
+		login({
+			variables: {
+				email: data.email,
+				password: data.password,
+			},
+		})
 
 	return (
 		<FormRegistration
