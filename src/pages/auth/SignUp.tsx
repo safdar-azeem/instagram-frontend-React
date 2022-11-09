@@ -7,14 +7,15 @@ import FormRegistration from '../../components/registration/FormRegistration'
 import { AppRoutes } from '../../constants/routes.constants'
 import RegisterMutation from '../../graphql/mutations/register.mutation'
 import { signUpSchema } from '../../mocks/signUp.schema'
+import { useRegisterMutation } from '../../types/graphql.types'
 
 const SignUp = () => {
 	const navigate = useNavigate()
 
-	const [register, { loading }] = useMutation(RegisterMutation, {
-		onCompleted: ({ register }) => {
+	const [register, { loading }] = useRegisterMutation({
+		onCompleted: (data) => {
 			showNotification({
-				message: register.message,
+				message: data.register?.message || 'Registration successful',
 				icon: <Icon icon='mdi:check' />,
 			})
 			navigate(AppRoutes.LOGIN)
@@ -28,7 +29,14 @@ const SignUp = () => {
 		},
 	})
 
-	const handleSubmit = (data: IFormValues) => register({ variables: data })
+	const handleSubmit = (data: IFormValues) =>
+		register({
+			variables: {
+				name: data.name,
+				email: data.email,
+				password: data.password,
+			},
+		})
 
 	return (
 		<FormRegistration
