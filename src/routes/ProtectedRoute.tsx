@@ -1,8 +1,7 @@
-import { useQuery } from '@apollo/client'
 import { Navigate } from 'react-router-dom'
 import FallBackLoader from '../components/reusable/FallBackLoader'
 import { AppRoutes } from '../constants/routes.constants'
-import MeQuery from '../graphql/queries/me.query'
+import { useMeQuery } from '../types/graphql.types'
 import iCookies from '../utils/cookies.utils'
 
 interface ProtectedRouteProps {
@@ -12,7 +11,7 @@ interface ProtectedRouteProps {
 
 const ProtectedRoute = ({ children, type }: ProtectedRouteProps) => {
 	const token = iCookies.getToken()
-	const { data, loading } = useQuery(MeQuery, {
+	const { data, loading } = useMeQuery({
 		fetchPolicy: 'network-only',
 		context: {
 			headers: {
