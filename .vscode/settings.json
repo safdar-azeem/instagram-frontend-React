@@ -145,7 +145,7 @@
 	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"window.zoomLevel": 1,
+	"window.zoomLevel": 0,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
 	"prettier.bracketSameLine": true,
